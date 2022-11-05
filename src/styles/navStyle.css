@@ -166,7 +166,7 @@ div.navbar-collapse.show .inner_nav_container div a {
 
 /*mobile navbar toggler*/
 button.navbar-toggler {
-    background-color: var(--maron) !important;
+    background-color: var(--cherryRed) !important;
 }
 button.navbar-toggler > span.navbar-toggler-icon {
     color: var(--offWhite) !important;
