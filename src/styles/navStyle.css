@@ -41,7 +41,7 @@ div.nav_container a.logo img {
 div.inner_nav_container {
     display: flex;
     flex-direction: column;
-    
+    z-index: 100% !important;
     width: 100%;
 }
 div.inner_nav_container > div {
@@ -109,6 +109,7 @@ div.bottom_nav a:hover {
 /*Navigation(top + bottom) container*/
 nav.navigation_inner_container {
     width: 100%;
+    z-index: 100%;
 }
 
 nav.navigation_inner_container > div {
@@ -123,7 +124,9 @@ a.logo_moboile {
 
 a.logo_moboile img {
     width: 9rem !important;
-    position: sticky;
+    position: absolute;
+    left: 5%;
+    
 
 }
 div.nav_container_mobile {
@@ -161,3 +164,10 @@ div.navbar-collapse.show .inner_nav_container div a {
     color: var(--maron) !important;
 }
 
+/*mobile navbar toggler*/
+button.navbar-toggler {
+    background-color: var(--maron) !important;
+}
+button.navbar-toggler > span.navbar-toggler-icon {
+    color: var(--offWhite) !important;
+}

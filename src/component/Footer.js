@@ -1,4 +1,5 @@
 import { Container, Row, Col, Image, NavLink } from "react-bootstrap"
+import { FaFacebook, FaWhatsapp ,FaTwitter, FaLinkedin } from 'react-icons/fa'
 import Logo from '../res/images/logo-s-transparent.png'
 import '../styles/footer.css'
 
@@ -38,7 +39,29 @@ const Footer = () => {
         <Row className='content_row footer_details'>
              <Row className="content_title">
             تابعونا
-        </Row>
+            </Row>
+            <Row className='social_link_row'>
+              <Col>
+                <a href="https://facebook.com" target='_blank' rel="noreferrer">
+                  <FaFacebook />
+                </a>
+              </Col>
+              <Col>
+                <a href="https://web.whatsapp.com/" target='_blank' rel="noreferrer">
+                  <FaWhatsapp />
+                </a>
+              </Col>
+              <Col>
+                <a href="https://twitter.com/" target='_blank' rel="noreferrer">
+                  <FaTwitter />
+                </a>
+              </Col>
+              <Col>
+                <a href="https://www.linkedin.com/" target='_blank' rel="noreferrer">
+                  <FaLinkedin />
+                </a>
+              </Col>
+            </Row>
         </Row>
            
       </Col>

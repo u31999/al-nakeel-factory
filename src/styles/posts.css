@@ -1,6 +1,7 @@
 div.posts_container {
     padding-top: 3rem;
     padding-bottom: 3rem;
+   
     
 }
 
@@ -62,4 +63,8 @@ div.product_image_container > div.card {
 
 div.product_image_container img {
     height: 100%;
+}
+
+div.post_data_card {
+    gap: 0.6rem;
 }

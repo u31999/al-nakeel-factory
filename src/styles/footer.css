@@ -28,7 +28,7 @@ div.content_title {
 div.content_data {
     color: var(--offWhite);
     letter-spacing: 1px;
-    font-size: 1.7vw;
+    font-size: 2vw;
 }
 
 div.content_row a:hover {
@@ -44,3 +44,12 @@ div.content_row a:hover {
     text-align: center;
 }
 
+div.social_link_row {
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    div.social_link_row {
+        width: 90%;
+    }
+}

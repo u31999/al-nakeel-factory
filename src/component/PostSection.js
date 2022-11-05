@@ -1,7 +1,6 @@
 import { Container, Col, Row, Image } from "react-bootstrap"
 import ReadMoreBtn from './ReadMoreBtn'
 import { useMediaQuery } from 'react-responsive'
-import { motion, AnimatePresence } from 'framer-motion'
 
 
 import '../styles/posts.css'
@@ -36,11 +35,11 @@ const PostSection = ({data, mode}) => {
       {
         // if we are in the default mode
       }
-      <AnimatePresence>
+      
         <Col className="img_container" md='3'>
           <Image src={post.img} rounded fluid className="post_image" />
         </Col>
-        </AnimatePresence>
+        
         <Col className='post_data_card col-md col-lg' md='3'>
           <StyledTitle title={title} />
           <Row>

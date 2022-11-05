@@ -29,10 +29,8 @@ div.our_products_container {
     width: 30%;
     text-shadow: #000 1.5px 1.5px 1.5px;
 }
-.our_products_title > h2.line {
-    width: 70% !important; 
-}
-.our_products_title h2::after {
+
+.our_products_title h2.line::after {
     content: "";
     display: block;
     width: 90px;
@@ -42,7 +40,7 @@ div.our_products_container {
     top: 50%;
     position: absolute;
 }
-.our_products_title > h2::before {
+.our_products_title > h2.line::before {
     content: "";
     display: block;
     width: 90px;

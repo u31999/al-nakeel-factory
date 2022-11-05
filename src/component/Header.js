@@ -25,19 +25,19 @@ const Header = () => {
   return (
     <header>
       <div 
-      id= 'nav_container' className={!mdSize 
+      id= 'nav_container' className={!isTabletOrMobile 
       ? `nav_container ${v !== undefined && v > 80 ? 'change_nav' : ''}` 
       : `nav_container nav_container_mobile` }>
-      {!isTabletOrMobile &&  <Navbar.Brand href='#' className='logo'>
+      {!mdSize &&  <Navbar.Brand href='#' className='logo'>
             <Image src={Logo} />
             </Navbar.Brand> 
              }
      
             
             
-            <Navbar collapseOnSelect expand='lg' className='nav_box navigation_inner_container'>
+            <Navbar collapseOnSelect expand='md' className='nav_box navigation_inner_container'>
                 <Container>
-                <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+                <Navbar.Toggle aria-controls='responsive-navbar-nav danger' />
                 <Navbar.Collapse id='responsive-navbar-nav'>
                 <div className='inner_nav_container'>
                     <TopNav />
@@ -48,7 +48,7 @@ const Header = () => {
              </Navbar>
     
                 
-         {isTabletOrMobile &&  <Navbar.Brand href='#' className='logo logo_moboile'>
+         {mdSize &&  <Navbar.Brand href='#' className='logo logo_moboile'>
             <Image src={Logo} />
             </Navbar.Brand> 
              }
