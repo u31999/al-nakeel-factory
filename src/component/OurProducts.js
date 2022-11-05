@@ -21,7 +21,7 @@ const OurProducts = ({data}) => {
             data && (
                 data.map((item, i) => (
                  
-                    <Col key={i} className='product_image_container'>
+                    <Col key={i} className='product_image_container' md='4'>
                         <Card className='product_card'>
                             <CardTitle>{item.name}</CardTitle>
                             <CardImg src={item.imgSrc} fluid/>
