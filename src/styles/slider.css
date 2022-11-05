@@ -1,0 +1,88 @@
+@import './rootStyle.css';
+
+div.slide_container {
+    height: 650px;
+    border-bottom: 4px groove var(--cherryRed);
+}
+
+div.slide_container .swiper {
+    height: 100%;
+}
+.slide {
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    
+}
+.slide_img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Slide info*/
+div.slide_info_container {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 40%;
+    height: 40%;
+    transform: translate(-10%, -60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: var(--defaultTransition);
+    animation: fadein_slid 100ms liner alternate infinite;
+    padding: .5rem
+}
+div.slide_info_container > h2 {
+    text-align: center;
+    color: var(--offWhite);
+    padding: 1rem 2rem;
+    background-color: var(--cherryRed);
+    text-shadow: black 1px 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 3vw;
+    
+}
+div.slide_info_container > p {
+    color: var(--offWhite);
+    font-size: 2vw;
+}
+
+
+/*navigation button*/
+div.swiper-button-prev {
+    color: var(--cherryRed);
+    transition: var(--defaultTransition);
+}
+div.swiper-button-next {
+    color: var(--cherryRed);
+    transition: var(--defaultTransition);
+}
+div.swiper-button-prev:hover {
+    color: var(--offWhite)
+}
+div.swiper-button-next:hover {
+    color: var(--offWhite)
+}
+div.swiper-scrollbar-drag {
+    background-color: var(--maron);
+}
+
+@keyframes fadein_slid {
+   from {
+    opacity: 0
+   }
+   to {
+    opacity: 1
+   }
+}

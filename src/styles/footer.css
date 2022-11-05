@@ -1,0 +1,46 @@
+@import './rootStyle.css';
+
+div.footer_container {
+    background-color: var(--darkBlue);
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 4rem;
+    border-top-left-radius: 10rem;
+}
+
+div.footer_logo > img {
+    width: 140px;
+}
+div.footer_details {
+    padding: 1rem;
+}
+div.content_row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: .5rem;
+}
+div.content_title {
+    color: var(--offBlack);
+    font-size: 2vw;
+    letter-spacing: 1px;
+}
+div.content_data {
+    color: var(--offWhite);
+    letter-spacing: 1px;
+    font-size: 1.7vw;
+}
+
+div.content_row a:hover {
+    color: var(--cherryRed);
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400 !important;
+    font-size: small !important;
+    text-align: center;
+}
+

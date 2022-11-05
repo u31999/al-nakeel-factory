@@ -1,0 +1,28 @@
+:root {
+    --cherryRed: #990011FF;
+    --offWhite: #FCF6F5FF;
+    --defaultTransition: all 0.5s;
+    --maron: #7A2048;
+    --blue: #408EC6;
+    --pink:  #F7C5CC;
+    --darkBlue: #001c34;
+    --offBlack: #798794;
+    --defaultBoxShadow: 6px 6px 6px 1px rgba(0, 0, 5, 0.462);
+
+}
+
+/*ReadMoreBtnStyle*/
+button.read_more_btn {
+    background-color: var(--maron);
+    border: none;
+    color: var(--offWhite);
+    letter-spacing: 2px;
+    font-size: 1.7vw;
+    border: 1px solid var(--cherryRed);
+    border-radius: 15px;
+}
+
+button.read_more_btn:hover {
+    background-color: var(--cherryRed);
+    border-color: var(--maron);
+}

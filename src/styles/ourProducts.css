@@ -1,0 +1,110 @@
+@import './rootStyle.css';
+
+div.our_products_background_div {
+    background-color:  var(--maron);
+   
+    border: 14px solid white;
+    outline: 2px solid var(--cherryRed);
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    
+}
+div.our_products_container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color:   transparent;
+    border-radius: 50px;
+    
+   
+}
+
+.our_products_title > h2 {
+    font-family: sans-serif;
+    color: var(--offWhite);
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-shadow: #000 1.5px 1.5px 1.5px;
+}
+.our_products_title > h2.line {
+    width: 70% !important; 
+}
+.our_products_title h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: var(--cherryRed);
+    right: 0%;
+    top: 50%;
+    position: absolute;
+}
+.our_products_title > h2::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: var(--cherryRed);
+    left: 0%;
+    top: 50%;
+    position: absolute;
+}
+
+
+div.product_card {
+    width: 95% !important;
+    height: 80% !important;
+    display: flex;
+    position: relative;
+    border: none;
+}
+
+div.product_card > img {
+    height: 100% !important;
+    flex: 1;
+    min-height: 100%;
+    width: 100%;
+    box-shadow: var(--defaultBoxShadow);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+div.product_card:hover {
+    cursor: pointer;
+    transition: var(--defaultTransition) ease-in-out;
+    opacity: .7;
+    transform: translateY(-20%);
+}
+
+div.product_card > div.card-title {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    
+    left: 10%;
+    top: 5%;   
+}
+
+div.products_details_container {
+    padding-top: 4rem;
+}
+
+div.our_products_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.our_products_title > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+
+.products_btn_container > div {
+    align-items: center;
+    justify-content: center;
+}

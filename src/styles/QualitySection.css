@@ -1,0 +1,35 @@
+div.quality_container {
+padding-top: 8rem;
+padding-bottom: 8rem;
+}
+
+div.quality_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: .5rem;
+    background-color: transparent;
+  
+}
+
+div.quality_card img {
+    width: 15vw;
+    height: 15vw;
+ 
+}
+
+div.quality_card {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+div.quality_row {
+    background: blanchedalmond;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 25px
+}

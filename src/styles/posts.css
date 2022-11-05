@@ -1,0 +1,65 @@
+div.posts_container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+
+div.posts_container > div.row, 
+div.posts_container > div.row  div.img_container {
+   height: 100%;
+}
+
+div.posts_container > div.row {
+    gap: 3rem;
+    margin: 0;
+}
+
+.post_image {
+    height: 100% !important;
+    width: 100%;
+    box-shadow: var(--defaultBoxShadow);
+}
+div.title {
+    display: block;
+    width: 40%;
+    
+}
+div.title  h2 {
+    font-family: sans-serif;
+    color: var(--maron);
+    position: relative;
+    display: flex;
+    
+   text-shadow: #000 .5px .5px .5px;
+}
+.line {
+    flex-direction: row-reverse;
+}
+div.title > h2.line:before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: var(--maron);
+    right: 0%;
+    top: 50%;
+    position: absolute;
+}
+
+div.post_data_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   
+}
+div.product_image_container > div.card {
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    background-color: transparent;
+}
+
+div.product_image_container img {
+    height: 100%;
+}
