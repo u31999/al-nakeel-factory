@@ -64,6 +64,7 @@ const Slider = () => {
       navigation
       autoplay
       lazy
+      loop={true}
       
      
     >
