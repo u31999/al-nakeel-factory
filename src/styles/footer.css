@@ -1,3 +1,5 @@
+/* The footer style */
+
 @import './rootStyle.css';
 
 div.footer_container {
@@ -48,6 +50,8 @@ div.social_link_row {
     width: 30%;
 }
 
+
+/* Mobile breakpoint */
 @media only screen and (max-width: 768px) {
     div.social_link_row {
         width: 90%;

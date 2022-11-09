@@ -1,5 +1,5 @@
 @import './rootStyle.css';
-
+/*The top slide section*/
 div.slide_container {
     height: 650px;
     border-bottom: 4px groove var(--cherryRed);
